@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fbf7ec;
+    color: #9b7a4d;
+    line-height: 1.6;
+}
+
+#section1 {
+    background: #f6e1b1;
+    color: white;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover, nav ul li.active a {
+    background: #ebba71;
+}
+
+
+        .notifications-container {
+            max-width: 600px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .notification {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        .notification:last-child {
+            border-bottom: none;
+        }
+
+        .notification.unread {
+            background-color: #f6e1b1;
+            font-weight: bold;
+        }
+
+        .notification i {
+            margin-right: 10px;
+            color: #9b7a4d;
+        }
+
+        header img {
+    width: 78px;
+    height: auto;
+    display: block;
+    margin-right: auto; 
+}
+    </style>
+</head>
+<body>
+
+    <section id="section1">
+        <header>
+            <img src="../logoproject.png">
+            <nav>
+                <ul>
+                    <li><a href="myproject.html">Home</a></li>
+                    <li><a href="post.html">Post</a></li>
+                    <li class="active"><a href="notifications.html">Notifications</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+
+    <div class="notifications-container">
+        <h2>Notifications</h2>
+        
+        <div class="notification unread">
+            <i>📚</i> New book added: "The Midnight Library"
+        </div>
+
+        <div class="notification unread">
+            <i>🎉</i> Your review got 5 likes!
+        </div>
+
+        <div class="notification">
+            <i>🔔</i> Reminder: Book discussion at 5 PM
+        </div>
+
+        <div class="notification">
+            <i>📖</i> Someone replied to your comment!
+        </div>
+
+        <div class="notification">
+            <i>⭐</i> A book you follow has been updated!
+        </div>
+    </div>
+
+</body>
+</html>
